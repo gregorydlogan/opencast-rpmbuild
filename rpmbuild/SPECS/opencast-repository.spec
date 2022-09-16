@@ -1,6 +1,6 @@
 Name:      opencast-repository
 Summary:   Opencast RPM Repository
-Version:   12
+Version:   13
 Release:   1%{?dist}
 License:   CC-0
 URL:       https://pkg.opencast.org
@@ -13,7 +13,8 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 Requires: epel-release
 %endif
 
-Provides:  opencast-repository-12  = %{version}
+Provides:  opencast-repository-13  = %{version}
+Obsoletes: opencast-repository-13 <= %{version}
 Obsoletes: opencast-repository-12 <= %{version}
 Obsoletes: opencast-repository-11 <= %{version}
 Obsoletes: opencast-repository-10 <= %{version}
@@ -21,7 +22,7 @@ Obsoletes: opencast-repository-9 <= %{version}
 
 
 %description
-RPM repository for Opencast 12 on CentOS Stream, Red hat Enterprise Linux and
+RPM repository for Opencast 13 on CentOS Stream, Red hat Enterprise Linux and
 equivalent distributions.
 
 
@@ -46,6 +47,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Fri Sep 16 2022 Greg Logan <gregorydlogan@gmail.com> - 13-1
+- Fake Opencast 13 repository
+
 * Wed Jun 15 2022 Lars Kiesow <lkiesow@uos.de> - 12-1
 - Opencast 12 repository
 
