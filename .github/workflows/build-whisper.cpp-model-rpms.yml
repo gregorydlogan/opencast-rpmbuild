@@ -33,7 +33,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - run: df -h
+      - run: |
+          pwd
+          df -h .
 
       - id: version
         run: echo "version=$(cat oc.version)" >> $GITHUB_OUTPUT

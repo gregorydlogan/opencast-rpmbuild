@@ -81,12 +81,14 @@ install -m 0755 %{SOURCE0} .
 for model in %{_models}
 do
   ./download-ggml-model.sh "${model}"
+  df -h .
 done
 
 %install
 for model in %{_models}
 do
   install -p -D -m 0644 ggml-${model}.bin %{buildroot}%{_datadir}/whisper.cpp/models/ggml-${model}.bin
+  df -h .
 done
 
 
