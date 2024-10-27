@@ -83,6 +83,8 @@ do
   ./download-ggml-model.sh "${model}"
   df -h .
 done
+du -hs .
+ls -lh
 
 %install
 for model in %{_models}
