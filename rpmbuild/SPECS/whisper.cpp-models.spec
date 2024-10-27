@@ -1,4 +1,5 @@
-%define _models tiny base small medium large-v1 large-v2 large-v2-q5_0 large-v3 large-v3-q5_0 large-v3-turbo large-v3-turbo-q5_0
+%define _models tiny base small medium large-v1 large-v2 large-v2-q5_0
+#large-v3 large-v3-q5_0 large-v3-turbo large-v3-turbo-q5_0
 
 Name:           whisper.cpp
 Version:        0.1
@@ -51,25 +52,25 @@ Summary: Model 'large-v2-q5_0' for whisper.cpp
 %description large-v2-q5_0
 Model 'large-v2-q5_0' for whisper.cpp
 
-%package large-v3
-Summary: Model 'large-v3' for whisper.cpp
-%description large-v3
-Model 'large-v3' for whisper.cpp
-
-%package large-v3-q5_0
-Summary: Model 'large-v3-q5_0' for whisper.cpp
-%description large-v3-q5_0
-Model 'large-v3-q5_0' for whisper.cpp
-
-%package large-v3-turbo
-Summary: Model 'large-v3-turbo' for whisper.cpp
-%description large-v3-turbo
-Model 'large-v3-turbo' for whisper.cpp
-
-%package large-v3-turbo-q5_0
-Summary: Model 'large-v3-turbo-q5_0' for whisper.cpp
-%description large-v3-turbo-q5_0
-Model 'large-v3-turbo-q5_0' for whisper.cpp
+#%package large-v3
+#Summary: Model 'large-v3' for whisper.cpp
+#%description large-v3
+#Model 'large-v3' for whisper.cpp
+#
+#%package large-v3-q5_0
+#Summary: Model 'large-v3-q5_0' for whisper.cpp
+#%description large-v3-q5_0
+#Model 'large-v3-q5_0' for whisper.cpp
+#
+#%package large-v3-turbo
+#Summary: Model 'large-v3-turbo' for whisper.cpp
+#%description large-v3-turbo
+#Model 'large-v3-turbo' for whisper.cpp
+#
+#%package large-v3-turbo-q5_0
+#Summary: Model 'large-v3-turbo-q5_0' for whisper.cpp
+#%description large-v3-turbo-q5_0
+#Model 'large-v3-turbo-q5_0' for whisper.cpp
 
 
 %prep
@@ -117,27 +118,27 @@ done
 %files large-v2-q5_0
 %{_datadir}/whisper.cpp/models/ggml-large-v2-q5_0.bin
 
-%files large-v3
-%{_datadir}/whisper.cpp/models/ggml-large-v3.bin
-
-%files large-v3-q5_0
-%{_datadir}/whisper.cpp/models/ggml-large-v3-q5_0.bin
-
-%files large-v3-turbo
-%{_datadir}/whisper.cpp/models/ggml-large-v3-turbo.bin
-
-%files large-v3-turbo-q5_0
-%{_datadir}/whisper.cpp/models/ggml-large-v3-turbo-q5_0.bin
+#%files large-v3
+#%{_datadir}/whisper.cpp/models/ggml-large-v3.bin
+#
+#%files large-v3-q5_0
+#%{_datadir}/whisper.cpp/models/ggml-large-v3-q5_0.bin
+#
+#%files large-v3-turbo
+#%{_datadir}/whisper.cpp/models/ggml-large-v3-turbo.bin
+#
+#%files large-v3-turbo-q5_0
+#%{_datadir}/whisper.cpp/models/ggml-large-v3-turbo-q5_0.bin
 
 %changelog
 * Sun Oct 27 2024 Lars Kiesow <lkiesow@uos.de> - 0.1-1
 - Added new model: large-v1
 - Added new model: large-v2
 - Added new model: large-v2-q5_0
-- Added new model: large-v3
-- Added new model: large-v3-q5_0
-- Added new model: large-v3-turbo
-- Added new model: large-v3-turbo-q5_0
+#- Added new model: large-v3
+#- Added new model: large-v3-q5_0
+#- Added new model: large-v3-turbo
+#- Added new model: large-v3-turbo-q5_0
 
 * Sat Dec 16 2023 Lars Kiesow <lkiesow@uos.de> - 0.1-1
 - Initial Build
