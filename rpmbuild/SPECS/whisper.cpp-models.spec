@@ -88,6 +88,8 @@ done
 for model in %{_models}
 do
   install -p -D -m 0644 ggml-${model}.bin %{buildroot}%{_datadir}/whisper.cpp/models/ggml-${model}.bin
+  # need to save space on github
+  rm ggml-${model}.bin
   df -h .
 done
 
